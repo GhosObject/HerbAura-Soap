@@ -1,0 +1,640 @@
+.story-page {
+    min-height: 100vh;
+    background: #fffdf7;
+    color: #263326;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.story-hero {
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #f3f7ed;
+}
+
+.story-hero-content {
+    width: 55%;
+
+    padding: 90px 0 90px 11.5%;
+
+    position: relative;
+    z-index: 2;
+}
+
+.story-hero-content>span {
+    color: #4f783b;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.story-hero-content h1 {
+    margin-top: 16px;
+
+    font-family: Georgia, serif;
+
+    font-size: 54px;
+    line-height: 1.15;
+
+    font-weight: 400;
+
+    color: #263326;
+}
+
+.story-hero-content h1 strong {
+    color: #315c32;
+}
+
+.story-hero-content p {
+    max-width: 620px;
+
+    margin-top: 22px;
+
+    color: #6e776e;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+}
+
+
+/* Product Image */
+
+.story-hero-image {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 45%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #e9f1e2;
+}
+
+.story-hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 30%;
+    height: 100%;
+
+    background: linear-gradient(to right,
+            #f3f7ed,
+            rgba(243, 247, 237, 0));
+
+    z-index: 2;
+}
+
+.story-hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+}
+
+/* =========================
+   BEGINNING
+========================= */
+
+.story-beginning {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 100px 7.8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.story-image-box {
+    height: 430px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f3f7ed;
+
+    border: 1px solid #dce8d6;
+
+    font-size: 120px;
+}
+
+.story-label {
+    color: #8a6a4a;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.story-content h2 {
+    margin-top: 13px;
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    font-weight: 400;
+}
+
+.story-content h2 strong {
+    color: #315c32;
+}
+
+.story-content p {
+    margin-top: 20px;
+
+    color: #707870;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+/* =========================
+   MISSION
+========================= */
+
+.story-mission {
+    padding: 90px 7.8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    background: #315c32;
+
+    color: white;
+}
+
+.mission-heading,
+.mission-text {
+    max-width: 550px;
+}
+
+.mission-heading {
+    margin-left: auto;
+}
+
+.story-mission span {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+
+    color: #d8e8ce;
+}
+
+.story-mission h2 {
+    margin-top: 14px;
+
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    font-weight: 400;
+}
+
+.story-mission h2 strong {
+    color: #dbeccf;
+}
+
+.mission-text {
+    margin-right: auto;
+}
+
+.mission-text p {
+    margin-bottom: 18px;
+
+    color: #e1e9de;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+/* =========================
+   INGREDIENTS
+========================= */
+
+.ingredients-section {
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 100px 7.8%;
+}
+
+.ingredients-heading {
+    text-align: center;
+}
+
+.ingredients-heading span {
+    color: #4f783b;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+}
+
+.ingredients-heading h2 {
+    margin-top: 12px;
+
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    font-weight: 400;
+}
+
+.ingredients-heading h2 strong {
+    color: #315c32;
+}
+
+.ingredients-heading p {
+    max-width: 600px;
+
+    margin: 18px auto 0;
+
+    color: #747c74;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+.ingredients-grid {
+    margin-top: 50px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.ingredient-card {
+    padding: 30px 25px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #e1e9dc;
+
+    transition: 0.3s ease;
+}
+
+.ingredient-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 30px rgba(49, 92, 50, 0.08);
+}
+
+.ingredient-card>div {
+    font-size: 35px;
+}
+
+.ingredient-card h3 {
+    margin-top: 15px;
+
+    color: #315c32;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+}
+
+.ingredient-card p {
+    margin-top: 8px;
+
+    color: #777f77;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+/* =========================
+   VALUES
+========================= */
+
+.story-values {
+    padding: 90px 7.8%;
+
+    background: #f3f7ed;
+}
+
+.values-heading {
+    max-width: 1250px;
+
+    margin: auto;
+}
+
+.values-heading span {
+    color: #8a6a4a;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+}
+
+.values-heading h2 {
+    margin-top: 12px;
+
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+.values-heading h2 strong {
+    color: #315c32;
+}
+
+.values-grid {
+    max-width: 1250px;
+
+    margin: 50px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.value-card {
+    padding: 30px;
+
+    background: #fffdf7;
+
+    border: 1px solid #dce7d6;
+}
+
+.value-card>span {
+    color: #8a6a4a;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.value-card h3 {
+    margin-top: 18px;
+
+    color: #315c32;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+}
+
+.value-card p {
+    margin-top: 10px;
+
+    color: #747c74;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.story-cta {
+    padding: 100px 7.8%;
+
+    text-align: center;
+
+    background: #fffdf7;
+}
+
+.story-cta>span {
+    color: #4f783b;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: 700;
+}
+
+.story-cta h2 {
+    margin-top: 14px;
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    font-weight: 400;
+
+    color: #263326;
+}
+
+.story-cta p {
+    margin-top: 15px;
+
+    color: #747c74;
+
+    font-size: 14px;
+}
+
+.story-cta a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 25px;
+
+    padding: 13px 24px;
+
+    background: #315c32;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+}
+
+.story-cta a:hover {
+    background: #4f783b;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .story-hero-content h1 {
+        font-size: 44px;
+    }
+
+    .story-beginning {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .story-mission {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .mission-heading {
+        margin-left: 0;
+    }
+
+    .ingredients-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .story-hero {
+        min-height: 420px;
+    }
+
+    .story-hero-content {
+        padding: 70px 5%;
+    }
+
+    .story-hero-content h1 {
+        font-size: 36px;
+    }
+
+    .story-beginning {
+        padding: 70px 5%;
+    }
+
+    .story-image-box {
+        height: 300px;
+
+        font-size: 90px;
+    }
+
+    .story-content h2 {
+        font-size: 32px;
+    }
+
+    .story-mission {
+        padding: 70px 5%;
+    }
+
+    .story-mission h2 {
+        font-size: 32px;
+    }
+
+    .ingredients-section {
+        padding: 70px 5%;
+    }
+
+    .ingredients-heading h2 {
+        font-size: 32px;
+    }
+
+    .ingredients-grid {
+        grid-template-columns: 1fr;
+
+        margin-top: 35px;
+    }
+
+    .story-values {
+        padding: 70px 5%;
+    }
+
+    .values-heading h2 {
+        font-size: 32px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+
+        margin-top: 35px;
+    }
+
+    .story-cta {
+        padding: 70px 5%;
+    }
+
+    .story-cta h2 {
+        font-size: 32px;
+    }
+}
